@@ -89,6 +89,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
   transition: gap .35s var(--ease);
 }
 .link-arrow:hover { gap: 1.1em; }
+.section--ink .link-arrow { border-bottom-color: rgba(255,255,255,.55); }
 
 /* ---------- Header / Nav ---------- */
 .site-header {
