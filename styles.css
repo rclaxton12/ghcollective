@@ -425,6 +425,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
 /* ---------- Insights: post grid ---------- */
 .post-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.4rem, 3vw, 2.4rem); }
 @media (max-width: 900px) { .post-grid { grid-template-columns: 1fr 1fr; } }
+.post-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 620px) { .post-grid { grid-template-columns: 1fr; } }
 .post-card { background: var(--paper); display: flex; flex-direction: column; min-width: 0; }
 .post-card__media { overflow: hidden; aspect-ratio: 3 / 2; }
