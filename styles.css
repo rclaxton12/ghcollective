@@ -317,9 +317,14 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
 .member-row { display: grid; grid-template-columns: 320px 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
 .member-row + .member-row { border-top: 1px solid var(--line); padding-top: clamp(2.5rem, 5vw, 4.5rem); }
 @media (max-width: 720px){ .member-row{ grid-template-columns: 1fr; gap: 1.4rem; } }
-.member-row__media { aspect-ratio: 1/1; overflow: hidden; background: var(--paper-2); }
+.member-row__media { aspect-ratio: 1/1; overflow: hidden; border-radius: 50%; background: var(--paper-2); }
 .member-row__media img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter .6s var(--ease), transform 1s var(--ease); }
 .member-row:hover .member-row__media img { filter: grayscale(100%); transform: scale(1.03); }
+/* Photos supplied with the circle already cut out sit slightly inside the frame; enlarge them to fill it. */
+.member-row__media--inset img { transform: scale(1.08); }
+.member-row:hover .member-row__media--inset img { transform: scale(1.11); }
+.member-row__media--inset-ring img { transform: scale(1.14); }
+.member-row:hover .member-row__media--inset-ring img { transform: scale(1.17); }
 .member-row__name { font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.5rem); line-height: 1.05; }
 .member-row__role { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-40); margin-top: .6rem; }
 .member-row__bio { color: var(--ink-60); font-weight: 300; margin-top: 1.3rem; }
