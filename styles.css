@@ -306,6 +306,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
 .footer-col h5 { font-size: .68rem; letter-spacing: .24em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 1.2rem; }
 .footer-col a, .footer-col p { display: block; color: rgba(255,255,255,.82); font-size: .92rem; margin-bottom: .7rem; transition: color .3s; font-weight: 300; }
 .footer-col a:hover { color: var(--paper); }
+.footer-col .footer-contact-gap { margin-top: 1.6rem; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); margin-top: 3rem; padding-top: 1.6rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem 1.6rem; font-size: .72rem; letter-spacing: .08em; color: rgba(255,255,255,.45); }
 .footer-legal { display: flex; align-items: center; gap: 1rem; }
 .footer-legal img { height: 34px; width: auto; opacity: .9; }
