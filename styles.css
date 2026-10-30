@@ -515,3 +515,19 @@ h3 { font-size: clamp(1.3rem, 2.1vw, 1.7rem); }
 .footer-col a:hover { color: var(--accent); }
 a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .news-form input:focus { border-bottom-color: var(--accent); }
+
+/* ---------- Lighter photo overlays: shade only where text sits ---------- */
+.hero__media::after { background:
+  linear-gradient(90deg, rgba(0,0,0,.38) 0%, rgba(0,0,0,.12) 45%, rgba(0,0,0,0) 70%),
+  linear-gradient(180deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 45%, rgba(0,0,0,.55) 100%); }
+.page-hero__media::after, .article-hero__media::after { background:
+  linear-gradient(90deg, rgba(0,0,0,.32) 0%, rgba(0,0,0,.08) 55%, rgba(0,0,0,0) 80%),
+  linear-gradient(180deg, rgba(0,0,0,.36) 0%, rgba(0,0,0,.04) 24%, rgba(0,0,0,.08) 50%, rgba(0,0,0,.62) 100%); }
+.site-header:not(.scrolled) .nav a, .site-header:not(.scrolled) .nav-cta { text-shadow: 0 1px 10px rgba(0,0,0,.35); }
+.cta-band__media::after { background: linear-gradient(180deg, rgba(0,0,0,.38), rgba(0,0,0,.5)); }
+.hero h1, .page-hero h1, .article-hero h1, .cta-band h2 { text-shadow: 0 2px 28px rgba(0,0,0,.28); }
+.hero__sub, .hero .eyebrow, .page-hero .eyebrow, .article-hero .eyebrow, .cta-band .lede { text-shadow: 0 1px 14px rgba(0,0,0,.35); }
+
+/* ---------- Softer cards: no outlines, gentle tonal panels ---------- */
+.review, .area-card, .testimonial { border: 0; background: var(--paper-2); }
+.section--paper2 .review, .section--paper2 .area-card, .section--paper2 .testimonial { background: var(--paper); }
