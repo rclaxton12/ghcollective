@@ -19,6 +19,8 @@
   --line-strong: #cfcfcf;
   --paper: #ffffff;
   --paper-2: #f6f5f3;
+  --accent: #37a0c5;        /* Glasshouse brand blue */
+  --accent-deep: #287590;   /* same hue, deeper, for small text on light backgrounds */
   --max: 1280px;
   --gutter: clamp(1.25rem, 4vw, 4rem);
   --sans: "Compass Sans", "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -490,3 +492,26 @@ h3 { font-size: clamp(1.3rem, 2.1vw, 1.7rem); }
 
 .article-source { margin-top: 2.4rem; padding-top: 1.2rem; border-top: 1px solid var(--line); font-size: .82rem; color: var(--ink-40); font-weight: 300; }
 .article-source a { border-bottom: 1px solid var(--line-strong); }
+
+/* ---------- Brand accent (#37a0c5) ---------- */
+::selection { background: var(--accent); color: #fff; }
+.eyebrow, .post-card__cat, .mini-card__cat, .area-card__stat { color: var(--accent-deep); }
+.section--ink .eyebrow { color: var(--accent); }
+.hero .eyebrow, .page-hero .eyebrow, .article-hero .eyebrow { color: rgba(255,255,255,.85); }
+.nav a::after { background: var(--accent) !important; }
+.link-arrow { border-bottom-color: var(--accent); }
+.link-arrow:hover { color: var(--accent-deep); }
+.section--ink .link-arrow { border-bottom-color: var(--accent); }
+.step { border-top-color: var(--accent); }
+.section--ink .step { border-top-color: var(--accent); }
+.step .n { color: var(--accent); }
+.testimonial::before { color: var(--accent); }
+.pull cite { color: var(--accent-deep); }
+.section--ink .pull cite { color: var(--accent); }
+.article h2::after { content: ""; display: block; width: 2.4rem; height: 2px; background: var(--accent); margin-top: .7rem; }
+.article a { color: var(--accent-deep); }
+.faq summary:hover { color: var(--accent-deep); }
+.member-row__contact a { border-bottom-color: var(--accent); }
+.footer-col a:hover { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.news-form input:focus { border-bottom-color: var(--accent); }
