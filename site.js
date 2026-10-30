@@ -55,7 +55,7 @@
     revealAll();
   }
   // Netlify Forms: submit in the background and show a thank-you message in place.
-  document.querySelectorAll('form[data-netlify]').forEach(function (form) {
+  document.querySelectorAll('form.news-form[name]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
       if (!window.fetch || !window.URLSearchParams) return; // fall back to a normal post
       e.preventDefault();
