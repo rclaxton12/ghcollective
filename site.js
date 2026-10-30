@@ -54,21 +54,24 @@
   } else {
     revealAll();
   }
-  // Netlify Forms: submit in the background and show a thank-you message in place.
-  document.querySelectorAll('form.news-form[name]').forEach(function (form) {
+  // Web3Forms: submit in the background and show a thank-you message in place.
+  document.querySelectorAll('form.news-form[action*="web3forms"]').forEach(function (form) {
     form.addEventListener('submit', function (e) {
-      if (!window.fetch || !window.URLSearchParams) return; // fall back to a normal post
+      if (!window.fetch || !window.FormData) return; // fall back to a normal post
       e.preventDefault();
       var btn = form.querySelector('[type="submit"]');
       if (btn) { btn.disabled = true; btn.dataset.label = btn.textContent; btn.textContent = 'Sending...'; }
       var old = form.parentNode.querySelector('.form-message--error');
       if (old) old.remove();
-      fetch('/', {
+      fetch(form.action, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(form)).toString()
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
       }).then(function (res) {
-        if (!res.ok) throw new Error('Request failed');
+        return res.json().then(function (data) {
+          if (!res.ok || !data.success) throw new Error(data.message || 'Request failed');
+        });
+      }).then(function () {
         var msg = document.createElement('p');
         msg.className = 'form-message';
         msg.setAttribute('role', 'status');

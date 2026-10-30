@@ -124,11 +124,13 @@
     </div>
     <div class="reveal">
       <p style="color:var(--ink-60);font-weight:300">Monthly market insight for Phoenix and Scottsdale. No spam, just the information that helps you make a smart move.</p>
-      <form class="news-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-success="Thank you for signing up. Watch your inbox for our next update.">
-        <input type="hidden" name="form-name" value="newsletter" />
+      <form class="news-form" name="newsletter" action="https://api.web3forms.com/submit" method="POST" data-success="Thank you for signing up. Watch your inbox for our next update.">
+        <input type="hidden" name="access_key" value="9840c506-a155-4a4a-8685-ec42de994656" />
         <input type="hidden" name="subject" value="New newsletter sign-up from the Glasshouse Collective website" />
+        <input type="hidden" name="from_name" value="Glasshouse Collective Website" />
+        <input type="hidden" name="form" value="Newsletter sign-up" />
         <input type="hidden" name="page" value="Insights" />
-        <p class="form-hp" aria-hidden="true"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+        <input type="checkbox" name="botcheck" class="form-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <input type="text" name="first-name" placeholder="First name" aria-label="First name" autocomplete="given-name" required />
         <input type="email" name="email" placeholder="Email address" aria-label="Email address" autocomplete="email" required />
         <button class="btn" type="submit">Sign up</button>
