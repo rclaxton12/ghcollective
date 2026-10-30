@@ -319,14 +319,14 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
 
 /* ---------- Team roster (bios) ---------- */
 .roster { display: flex; flex-direction: column; gap: clamp(2.5rem, 5vw, 4.5rem); }
-.member-row { display: grid; grid-template-columns: 320px 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
+.member-row { display: grid; grid-template-columns: 210px 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; }
 .member-row + .member-row { border-top: 1px solid var(--line); padding-top: clamp(2.5rem, 5vw, 4.5rem); }
 @media (max-width: 720px){ .member-row{ grid-template-columns: 1fr; gap: 1.4rem; } }
 .member-row__media { aspect-ratio: 1/1; overflow: hidden; border-radius: 50%; background: var(--paper-2); }
 .member-row__media img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: filter .6s var(--ease), transform 1s var(--ease); }
 .member-row:hover .member-row__media img { filter: grayscale(100%); transform: scale(1.03); }
 /* Photos supplied with the circle already cut out sit slightly inside the frame; enlarge them to fill it. */
-.member-row__media--inset img { transform: scale(1.08); }
+.member-row__media--inset img { transform: scale(1.07); }
 .member-row:hover .member-row__media--inset img { transform: scale(1.11); }
 .member-row__media--inset-ring img { transform: scale(1.14); }
 .member-row:hover .member-row__media--inset-ring img { transform: scale(1.17); }
@@ -376,7 +376,7 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
   .hero { min-height: 88svh; }
   .hero__cta { gap: .7rem; }
   .hero__cta .btn { flex: 1 1 auto; justify-content: center; }
-  .member-row__media { max-width: 340px; }
+  .member-row__media { max-width: 200px; }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 400px) {
