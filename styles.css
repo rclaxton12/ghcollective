@@ -487,3 +487,6 @@ h3 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
 .testimonial figcaption { margin-top: 1.4rem; padding-top: 1.1rem; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: .3rem; }
 .testimonial__name { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); }
 .testimonial__detail { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-40); }
+
+.article-source { margin-top: 2.4rem; padding-top: 1.2rem; border-top: 1px solid var(--line); font-size: .82rem; color: var(--ink-40); font-weight: 300; }
+.article-source a { border-bottom: 1px solid var(--line-strong); }
