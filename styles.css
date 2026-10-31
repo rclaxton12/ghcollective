@@ -532,3 +532,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 /* ---------- Softer cards: no outlines, gentle tonal panels ---------- */
 .review, .area-card, .testimonial { border: 0; background: var(--paper-2); }
 .section--paper2 .review, .section--paper2 .area-card, .section--paper2 .testimonial { background: var(--paper); }
+/* ---------- Color & type polish ---------- */
+:root { --navy: #14213d; --navy-2: #0f1a31; --paper-2: #f2f6f7; --ink-60: #3f4a4f; }
+.section--ink, .site-footer { background: var(--navy); }
+.site-footer .footer-bottom { border-top-color: rgba(255,255,255,.12); }
+.btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn--light:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn--ghost:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.site-header.scrolled { background: rgba(20,33,61,.94); }
+h1, h2, h3, .pull blockquote, .member-row__name { font-weight: 400; letter-spacing: -0.018em; }
+h1 { line-height: 1.04; }
+h2 { line-height: 1.08; }
+.lede { color: var(--ink-60); line-height: 1.6; }
+p { line-height: 1.75; }
+.eyebrow { letter-spacing: .28em; }
