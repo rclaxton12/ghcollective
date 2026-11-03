@@ -557,3 +557,8 @@ p { line-height: 1.75; }
 /* Group team photo on the About page */
 .team-photo { margin: 0 0 clamp(2.5rem,5vw,4rem); max-width: 760px; }
 .team-photo img { display:block; width:100%; aspect-ratio: 3/2; object-fit: cover; object-position: center 40%; }
+/* Two buttons side by side in a banner */
+.cta-actions { display:flex; flex-wrap:wrap; gap: .9rem; justify-content:center; }
+.btn--outline-light { background: transparent; color: var(--paper); border-color: rgba(255,255,255,.85); }
+.btn--outline-light:hover { background: var(--accent); border-color: var(--accent); color:#fff; }
+.faq__a a { color: var(--accent-deep, #2a7f9e); text-decoration: underline; text-underline-offset: 3px; }
