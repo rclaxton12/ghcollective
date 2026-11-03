@@ -554,3 +554,7 @@ p { line-height: 1.75; }
 /* Lighter overlay for photos that are already dark (e.g. dusk scenes) */
 .cta-band--light .cta-band__media::after { background: linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.32)); }
 .cta-band--light h2, .cta-band--light .lede, .cta-band--light .eyebrow { text-shadow: 0 2px 18px rgba(0,0,0,.55); }
+/* Group team photo on the About page */
+.team-photo { margin: 0 0 clamp(2.5rem,5vw,4rem); }
+.team-photo img { display:block; width:100%; aspect-ratio: 3/2; object-fit: cover; object-position: center 40%; }
+@media (min-width: 861px) { .team-photo img { aspect-ratio: 16/9; } }
