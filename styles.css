@@ -549,3 +549,5 @@ p { line-height: 1.75; }
 
 /* Small accent text on the charcoal sections uses a lighter tint of the brand blue for legibility */
 .section--ink .eyebrow, .section--ink .step .n, .section--ink .pull cite, .site-footer .footer-col a:hover { color: var(--accent-light); }
+/* Bright interior photos need a slightly deeper overlay for legible white text */
+.cta-band--bright .cta-band__media::after { background: linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,.6)); }
