@@ -551,3 +551,6 @@ p { line-height: 1.75; }
 .section--ink .eyebrow, .section--ink .step .n, .section--ink .pull cite, .site-footer .footer-col a:hover { color: var(--accent-light); }
 /* Bright interior photos need a slightly deeper overlay for legible white text */
 .cta-band--bright .cta-band__media::after { background: linear-gradient(180deg, rgba(0,0,0,.5), rgba(0,0,0,.6)); }
+/* Lighter overlay for photos that are already dark (e.g. dusk scenes) */
+.cta-band--light .cta-band__media::after { background: linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.32)); }
+.cta-band--light h2, .cta-band--light .lede, .cta-band--light .eyebrow { text-shadow: 0 2px 18px rgba(0,0,0,.55); }
