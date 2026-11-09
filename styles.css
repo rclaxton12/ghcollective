@@ -562,3 +562,4 @@ p { line-height: 1.75; }
 .btn--outline-light { background: transparent; color: var(--paper); border-color: rgba(255,255,255,.85); }
 .btn--outline-light:hover { background: var(--accent); border-color: var(--accent); color:#fff; }
 .faq__a a { color: var(--accent-deep, #2a7f9e); text-decoration: underline; text-underline-offset: 3px; }
+.card__tag--sold { background: var(--accent); color: #fff; }
