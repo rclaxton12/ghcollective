@@ -570,3 +570,4 @@ p { line-height: 1.75; }
 .article-photos--one { max-width: 420px; }
 @media (max-width: 560px) { .article-photos--two { grid-template-columns: 1fr; } }
 .article-photos--wide img { aspect-ratio: 3 / 2; }
+.article-photos figcaption { grid-column: 1 / -1; font-size: .8rem; color: var(--ink-60); font-weight: 300; margin-top: -.25rem; }
