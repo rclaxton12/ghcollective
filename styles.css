@@ -571,3 +571,4 @@ p { line-height: 1.75; }
 @media (max-width: 560px) { .article-photos--two { grid-template-columns: 1fr; } }
 .article-photos--wide img { aspect-ratio: 3 / 2; }
 .article-photos figcaption { grid-column: 1 / -1; font-size: .8rem; color: var(--ink-60); font-weight: 300; margin-top: -.25rem; }
+.article p.article-credit { font-size: .8rem; letter-spacing: .04em; margin-top: 2rem; }
