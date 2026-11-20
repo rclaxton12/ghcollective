@@ -563,3 +563,12 @@ p { line-height: 1.75; }
 .btn--outline-light:hover { background: var(--accent); border-color: var(--accent); color:#fff; }
 .faq__a a { color: var(--accent-deep, #2a7f9e); text-decoration: underline; text-underline-offset: 3px; }
 .card__tag--sold { background: var(--accent); color: #fff; }
+/* Photo pairs inside articles */
+.article-photos { display: grid; gap: clamp(.75rem, 2vw, 1.25rem); margin: clamp(1.8rem, 4vw, 2.6rem) 0 0; }
+.article-photos img { display: block; width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 5; }
+.article-photos--two { grid-template-columns: 1fr 1fr; }
+.article-photos--one { max-width: 420px; }
+@media (max-width: 560px) { .article-photos--two { grid-template-columns: 1fr; } }
+.article-photos--wide img { aspect-ratio: 3 / 2; }
+.article-photos figcaption { grid-column: 1 / -1; font-size: .8rem; color: var(--ink-60); font-weight: 300; margin-top: -.25rem; }
+.article p.article-credit { font-size: .8rem; letter-spacing: .04em; margin-top: 2rem; }
